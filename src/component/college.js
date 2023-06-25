@@ -1,7 +1,10 @@
+"use client";
+
 import axios from "axios";
 import {TextField} from "@mui/material";
 import Button from "@mui/material/Button";
 import SendIcon from '@mui/icons-material/Send';
+import {useState} from "react";
 
 function College() {
     const [question, setQuestion] = useState("Hobby personality quiz");
