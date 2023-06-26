@@ -14,6 +14,7 @@ import CardContent from "@mui/material/CardContent";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Link from "next/link";
+import SendIcon from "@mui/icons-material/Send";
 
 function Landing(props) {
     return(
@@ -90,65 +91,94 @@ function Landing(props) {
                     <Grid item xs={12} md={12} style={{textAlign: 'center', padding: '2rem'}} >
                         <span style={{fontSize: '3rem', fontWeight: 'bold'}}> Blogs </span>
                     </Grid>
-                    <Grid item component={Card} xs className='blog-card'>
-                        <CardMedia
-                            component="img"
-                            alt="Blog 1"
-                            height="200"
-                            image="blog_1.png"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Did you know you can multiply your results by just a move?
-                            </Typography>
-                            <Typography variant="body2">
-                                Hello All! Today, we want to share with you the power of building connections beyond
-                                the confines of the workplace. In colleges or schools...
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Know More</Button>
-                        </CardActions>
+                    <Grid item xs={12} md={3} sx={{mr: 5}}>
+                        <Card>
+                            <CardMedia
+                                component="img"
+                                alt="Blog 1"
+                                height="200"
+                                image="blog_1.png"
+                            />
+                            <CardContent
+                                style={{
+                                    paddingBottom: "0%",
+                                    height: "225px",
+                                    overflow: "auto"
+                                }}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Did you know you can multiply your results by just a move?
+                                </Typography>
+                                <Typography variant="body2">
+                                    Hello All! Today, we want to share with you the power of building connections beyond
+                                    the confines of the workplace. In colleges or schools...
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Know More</Button>
+                            </CardActions>
+                        </Card>
                     </Grid>
-                    <Grid item component={Card} xs className='blog-card'>
-                        <CardMedia
-                            component="img"
-                            alt="Blog 2"
-                            height="200"
-                            image="blog_2.png"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Hobbies and innovation are interlinked?
-                            </Typography>
-                            <Typography variant="body2">
-                                Many of us associate creativity and innovation with our professional lives,
-                                but the connection between hobbies and these qualities should...
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Know More</Button>
-                        </CardActions>
+                    <Grid item xs={12} md={3} sx={{mr: 5}} >
+                        <Card>
+                            <CardMedia
+                                component="img"
+                                alt="Blog 2"
+                                height="200"
+                                image="blog_2.png"
+                            />
+                            <CardContent
+                                style={{
+                                    paddingBottom: "0%",
+                                    height: "225px",
+                                    overflow: "auto"
+                                }}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Hobbies and innovation are interlinked?
+                                </Typography>
+                                <Typography variant="body2">
+                                    Many of us associate creativity and innovation with our professional lives,
+                                    but the connection between hobbies and these qualities should...
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Know More</Button>
+                            </CardActions>
+                        </Card>
                     </Grid>
-                    <Grid item component={Card} xs className='blog-card'>
-                        <CardMedia
-                            component="img"
-                            alt="Blog 3"
-                            height="200"
-                            image="blog_3.png"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Navigating Superficial Relationships in the Digital Age
-                            </Typography>
-                            <Typography variant="body2">
-                                With the rise of social media, there has been a growing concern about the quality
-                                and depth of relationships in the digital age. Some argue that...
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Know More</Button>
-                        </CardActions>
+                    <Grid item xs={12} md={3} sx={{mr: 5}}>
+                        <Card>
+                            <CardMedia
+                                component="img"
+                                alt="Blog 3"
+                                height="200"
+                                image="blog_3.png"
+                            />
+                            <CardContent
+                                style={{
+                                    paddingBottom: "0%",
+                                    height: "225px",
+                                    overflow: "auto"
+                                }}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Navigating Superficial Relationships in the Digital Age
+                                </Typography>
+                                <Typography variant="body2">
+                                    With the rise of social media, there has been a growing concern about the quality
+                                    and depth of relationships in the digital age. Some argue that...
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small">Know More</Button>
+                            </CardActions>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={0} md={1}>
+                        <Button>
+                            <p> Show All
+                                <br />
+                                <SendIcon />
+                            </p>
+                        </Button>
                     </Grid>
                 </Grid>
             </Box>

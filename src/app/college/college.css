@@ -1,0 +1,18 @@
+.notchedOutline {
+    border-color: white !important;
+}
+
+.collegeFormBox {
+    width: 50% !important;
+    border-radius: 8px;
+    padding: 25px 45px;
+    background: linear-gradient(180deg, #0D1C3E 0%, #070618 100%);
+}
+
+.signInBox h3, .signUpBox h3 {
+    margin-left: 8px;
+}
+
+label:not(.class) {
+    color: white !important;
+}

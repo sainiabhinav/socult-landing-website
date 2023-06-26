@@ -203,3 +203,18 @@ a {
   background-color: rgba(13, 28, 62, 1);
   color: white;
 }
+
+.collegeFormBox {
+  width: 50% !important;
+  border-radius: 8px;
+  padding: 25px 45px;
+  background: linear-gradient(180deg, #0D1C3E 0%, #070618 100%);
+}
+
+label:not(.class) {
+  color: white !important;
+}
+
+.notchedOutline {
+  border-color: white !important;
+}
