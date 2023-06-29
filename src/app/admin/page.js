@@ -1,12 +1,12 @@
 import styles from "@/app/page.module.css";
 import TopNavbar from "@/component/navbar";
-import Blog from "@/component/blog";
+import BlogForm from "@/component/blogForm";
 
 export default function Home() {
     return (
         <main className={styles.main}>
             <TopNavbar />
-            <Blog />
+            <BlogForm />
         </main>
     )
 }

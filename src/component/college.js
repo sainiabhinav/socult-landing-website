@@ -5,7 +5,6 @@ import {TextField} from "@mui/material";
 import Button from "@mui/material/Button";
 import SendIcon from '@mui/icons-material/Send';
 import {useState} from "react";
-import styles from "../app/college/college.css";
 import Box from "@mui/material/Box";
 
 function College() {

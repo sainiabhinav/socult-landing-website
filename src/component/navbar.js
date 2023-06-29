@@ -28,28 +28,34 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                Home
-            </Typography>
+            <Link href={"/"} >
+                <Typography variant="h6" sx={{ my: 2 }}>
+                    Home
+                </Typography>
+            </Link>
             <Divider />
             <List>
                 <ListItem>
-                    <ListItemButton sx={{ textAlign: 'center' }}>
-                        <Link href={"#vision"} sx={{ mr: 2 }}>
+                    <ListItemButton sx={{ justifyContent: 'center' }}>
+                        <Link href={"/#vision"} smooth={true}>
                             <ListItemText primary={"Vision"} />
                         </Link>
                     </ListItemButton>
                 </ListItem>
 
                 <ListItem>
-                    <ListItemButton sx={{ textAlign: 'center' }}>
-                        <ListItemText primary={"How it works"} />
+                    <ListItemButton sx={{ justifyContent: 'center' }}>
+                        <Link href={"/#working"} >
+                            <ListItemText primary={"How it works"} />
+                        </Link>
                     </ListItemButton>
                 </ListItem>
 
                 <ListItem>
-                    <ListItemButton sx={{ textAlign: 'center' }}>
-                        <ListItemText primary={"Blog"} />
+                    <ListItemButton sx={{ justifyContent: 'center' }}>
+                        <Link href={"/#blog"} >
+                            <ListItemText primary={"Blogs"} />
+                        </Link>
                     </ListItemButton>
                 </ListItem>
             </List>
@@ -75,28 +81,32 @@ function DrawerAppBar(props) {
                         variant="h5"
                         noWrap
                         component="a"
-                        href=""
+                        href="/"
                         sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 0}}
                     >
                         SoCult
                     </Typography>
                     <Box sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1, justifyContent: 'end' }}>
-                        <Button variant={"contained"} color={"primary"} sx={{ color: '#fff' }}>
-                            Get Started
-                        </Button>
+                        <Link href={"college"} >
+                            <Button variant={"contained"} color={"primary"} sx={{ color: '#fff' }}>
+                                Get Started
+                            </Button>
+                        </Link>
                     </Box>
                     <Typography
                         variant="h6"
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        SoCult
+                        <Link href="/" style={{ marginRight: '30px' }}>
+                            SoCult
+                        </Link>
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        <Link href={"#vision"} style={{ marginRight: '30px' }}> Vision </Link>
-                        <Link href={"#working"} style={{ marginRight: '30px' }}> How it works </Link>
-                        <Link href={"#blog"} style={{ marginRight: '30px' }}> Blogs </Link>
-                        <Link href={"college"} style={{ marginRight: '30px' }}>
+                        <Link href={'/#vision'} style={{ marginRight: '30px' }} smooth={true} duration={500}> Vision </Link>
+                        <Link href={"/#working"} style={{ marginRight: '30px' }}> How it works </Link>
+                        <Link href={"/#blog"} style={{ marginRight: '30px' }}> Blogs </Link>
+                        <Link href={"college"} style={{ marginRight: '30px' }} >
                             <Button variant={"contained"} color={"primary"} sx={{ color: '#fff' }}>
                                 Get Started
                             </Button>
